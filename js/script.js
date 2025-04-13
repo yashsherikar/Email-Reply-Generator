@@ -8,7 +8,7 @@ function generateEmailReply() {
     document.getElementById("copyBtn").style.display = "none";
 
     // Update to deployed backend URL
-    fetch("https://email-reply-api.up.railway.app/api/email/generate", {  // Replace with your actual backend URL
+    fetch("https://email-reply-api.onrender.com/api/email/generate", {  // Replace with your actual backend URL
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ emailContent, tone })
